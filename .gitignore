@@ -1,6 +1,7 @@
 # Entorno virtual
 venv/
 .env/
+qatest-env
 
 # Archivos de Python
 *.pyc

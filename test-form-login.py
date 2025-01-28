@@ -21,7 +21,7 @@ password_input.clear()
 password_input.send_keys("mi_contraseña")
 
 
-time.sleep(10)
+time.sleep(20)
 
 
 print("Prueba exitosa: Login correcto.")

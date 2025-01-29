@@ -2,6 +2,7 @@
 venv/
 .env/
 qatest-env
+env
 
 # Archivos de Python
 *.pyc

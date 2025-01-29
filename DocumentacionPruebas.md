@@ -15,4 +15,12 @@
 
 * Casos de prueba > Instrucciones detalladas para probar una funcion especifica de la aplicacion.
 
+* Informe de pruebas > Docuementan errores, gravedad, se usan aplicaciones, por ejemplo TestRail. Descargar e impirimir desde la app.
 
+* Matriz de rastreo > Vincula los casos de prueba con los requisitos, si los cubren las pruebas.
+
+* Registro de defectos > Documenta todos los errores, y su impacto en el sistema. Usar un template de Bugs Report. LLeva fecha, url, resumen, screeshoot, navegador, severidad, prioridad, descripcion, pasos para reproducirlo, resultado esperado, resultado actual.
+
+* Estrategia de pruebas > Describen la forma en que se realizan las pruebas, de que tipo son y los recursos que vamos a usar. Puede ir dentro del plan de pruebas.
+
+### Documentar asegura una comprension clara del software y proporicona una base solida para futuras versiones. 

@@ -1,9 +1,27 @@
 from selenium import webdriver
 import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome()
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
 
-driver.get("https://profile-psi-topaz.vercel.app/")
-time.sleep(3)
+
+driver.get("https://buenosaires.gob.ar/agc")
+
+try:
+    first_clickable = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, "a, button"))
+    )
+    first_clickable.click()
+    print("Este es un click en el primer elemento clickeable realizado con éxito.")
+except Exception as e:
+    print(f"Error al hacer clic: {e}")
+
+
+time.sleep(10)
 
 driver.quit()

@@ -1,6 +1,6 @@
 # Integracion
 
-* Debe asegurarse de que cada odulo debe estar funcionando cunado se integren. Dos enfoques
+* Debe asegurarse de que cada modulo debe estar funcionando cunado se integren. Dos enfoques
 
 ## Top down
 

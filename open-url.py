@@ -10,14 +10,14 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 
 
-driver.get("https://buenosaires.gob.ar/agc")
+driver.get("https://nextjs-project-three-dun.vercel.app")
 
 try:
     first_clickable = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, "a, button"))
+        EC.element_to_be_clickable((By.CSS_SELECTOR, ".card-header"))
     )
     first_clickable.click()
-    print("Este es un click en el primer elemento clickeable realizado con éxito.")
+    print("Este es un click en el primer card clickeable realizado con éxito.")
 except Exception as e:
     print(f"Error al hacer clic: {e}")
 
